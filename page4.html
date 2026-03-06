@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>费城交通和邮寄 | 宾大留学指南</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="site-nav">
+      <a class="logo" href="index.html">宾大留学指南</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="打开菜单">菜单</button>
+      <ul id="menu" class="menu">
+        <li><a href="page1.html">初到费城</a></li>
+        <li><a href="page2.html">住在宾大</a></li>
+        <li><a href="page3.html">美国大学生活</a></li>
+        <li><a href="page4.html">费城交通和邮寄</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content reveal">
+      <p class="kicker">Page 4</p>
+      <h1>费城交通和邮寄</h1>
+      <p class="subtitle">在费城怎么出门：交通、寄信、寄包裹</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <article class="card">
+        <h3>在费城出门方便吗</h3>
+        <p>在费城生活，出门还是很方便的。学校附近可以走路去很多地方。如果你要去远一点的地方，可以坐 SEPTA。SEPTA 有公交车、地铁、电车和火车，所以很多学生平常都会坐。去市中心、去车站、去机场，都可以先看看 SEPTA 的路线。</p>
+
+        <h3>LUCY 和 Penn Transit</h3>
+        <p>在宾大附近，还有一些对学生很方便的交通服务。LUCY 会来回经过 University City 和 30th Street Station。Penn Transportation 也介绍了校园附近的交通服务。要是你晚上回家不放心，学校还有 Walking Escort 这样的服务，可以帮助你更安全地回去。</p>
+
+        <h3>怎么寄信和寄包裹</h3>
+        <p>在美国生活，有时候你要寄东西，也会常常收包裹。学校网站说，学生住在宿舍的话，信和包裹会先到学校的收件系统。你也可以用 USPS 寄信，或者用 UPS、FedEx、DHL 寄包裹。要寄东西的时候，一定要把收件人名字、地址和邮编写清楚。</p>
+
+        <h3>USPS 和其他快递有什么不一样</h3>
+        <p>如果你寄普通信件，很多人会用 USPS。要是你寄比较重要、比较快、或者比较大的包裹，很多人会用 UPS、FedEx 或 DHL。学校网站也提醒大家，USPS 的包裹到宿舍有时候会慢一点，所以如果你很着急，可以比较一下不同寄法。</p>
+
+        <h3>交通和邮寄地图</h3>
+        <p>这张地图标出了宾大、30th Street Station、费城机场和 Reading Terminal Market，方便你规划出行和寄送安排。</p>
+        <div id="transport-mail-map" class="map-embed map-canvas" aria-label="费城交通和邮寄地图"></div>
+
+        <h3>小提醒</h3>
+        <p>第一次在费城坐车或者寄东西的时候，最好先查路线、时间和地址。出门以前，把手机电充好，也可以先告诉朋友你要去哪里。这样会更安全，也会更方便。</p>
+      </article>
+
+      <div class="cta-group">
+        <a class="btn btn-outline" href="page3.html">上一页：美国大学生活</a>
+        <a class="btn" href="index.html">回到首页</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>宾大留学指南 | CHIN 0410 Midterm Project | Spring 2026</p>
+    <p>团队成员：崔怀恩（Matthew Tsui）、Jack Lamey、兰杰山</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

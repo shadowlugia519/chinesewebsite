@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>住在宾大 | 宾大留学指南</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="site-nav">
+      <a class="logo" href="index.html">宾大留学指南</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="打开菜单">菜单</button>
+      <ul id="menu" class="menu">
+        <li><a href="page1.html">初到费城</a></li>
+        <li><a href="page2.html">住在宾大</a></li>
+        <li><a href="page3.html">美国大学生活</a></li>
+        <li><a href="page4.html">费城交通和邮寄</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content reveal">
+      <p class="kicker">Page 2</p>
+      <h1>住在宾大</h1>
+      <p class="subtitle">宿舍、吃饭、学生资源</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <article class="card">
+        <h3>住在学校里面有什么好处</h3>
+        <p>很多新生刚到宾大的时候，会先住在学校宿舍。住在学校里很方便，因为离教室、图书馆和餐厅都比较近。你不用每天花很多时间坐车，也更容易认识新同学。对刚来美国的留学生来说，住在学校里会轻松一点。</p>
+        <figure class="inline-photo">
+          <img src="upenndorm.jpg" alt="宾大学生宿舍外观" loading="lazy" />
+          <figcaption>宾大宿舍环境示意图。</figcaption>
+        </figure>
+
+        <h3>吃饭怎么办</h3>
+        <p>宾大有学校餐厅，也有 meal plan。很多学生会在学校吃早饭、午饭或者晚饭。学校的 PennCard 很重要，因为你去一些学校地方、买东西或者吃饭的时候常常会用到。除了学校餐厅，University City 也有很多饭馆，附近也有不少好吃的中餐选择，比如 Mali 奶茶（茉莉奶白）、南翔小笼包，还有一家维吾尔面馆；而且校园里也有很多好吃的餐车，所以吃饭的选择很多。</p>
+        <figure class="inline-photo">
+          <img src="mollytea.jpg" alt="校园附近奶茶店饮品" loading="lazy" />
+          <figcaption>校园附近常见的奶茶选择。</figcaption>
+        </figure>
+        <p>下面这张地图整理了宾大附近常去的餐厅点位，方便你和同学按位置找吃饭的地方。</p>
+        <div id="living-food-map" class="map-embed map-canvas" aria-label="宾大附近餐厅地图"></div>
+
+        <h3>附近超市地图</h3>
+        <p>买日用品和做饭食材时，常去的两个超市是 Heirloom Market 和 ACME。</p>
+        <div id="living-market-map" class="map-embed map-canvas" aria-label="宾大附近超市地图"></div>
+
+        <h3>PennCard 很重要</h3>
+        <p>到了学校以后，最好早点办 PennCard。PennCard 是宾大的学生证，也是很重要的校园卡。你可以用它进一些学校楼，也可以用它使用一些学校服务。没有 PennCard 的时候，生活会不太方便，所以拿到以后要收好。</p>
+
+        <h3>生病了怎么办</h3>
+        <p>如果你在学校觉得不舒服，可以去 Student Health Services。学校网站说，这里给学生提供门诊服务。学校也要求很多学生参加学生保险，或者每年申请保险 waiver。所以来美国以前，最好先了解自己的保险情况。</p>
+
+        <h3>学习和生活上有问题怎么办</h3>
+        <p>在宾大，学生可以用很多资源帮助自己。Office of Student Affairs 可以帮助学生处理校园生活中的问题。Weingarten Center 可以帮助学生学习。要是你刚来美国，不太习惯新环境，也可以主动找学校老师或者工作人员帮忙。这样会让你更快适应。</p>
+
+        <h3>收包裹和信件</h3>
+        <p>住在学校宿舍的学生，平常也会收到信和包裹。Penn 的宿舍有收邮件和包裹的系统。学校网站也提醒大家，USPS 的包裹有时候会慢一点，而 UPS、FedEx、DHL 常常会更直接。所以下单的时候，要看清楚自己的地址，也要注意学校通知。</p>
+      </article>
+
+      <div class="cta-group">
+        <a class="btn btn-outline" href="page1.html">上一页：初到费城</a>
+        <a class="btn" href="page3.html">下一页：美国大学生活</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>宾大留学指南 | CHIN 0410 Midterm Project | Spring 2026</p>
+    <p>团队成员：崔怀恩（Matthew Tsui）、Jack Lamey、兰杰山</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

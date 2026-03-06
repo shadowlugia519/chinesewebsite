@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>初到费城 | 宾大留学指南</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="site-nav">
+      <a class="logo" href="index.html">宾大留学指南</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="打开菜单">菜单</button>
+      <ul id="menu" class="menu">
+        <li><a href="page1.html">初到费城</a></li>
+        <li><a href="page2.html">住在宾大</a></li>
+        <li><a href="page3.html">美国大学生活</a></li>
+        <li><a href="page4.html">费城交通和邮寄</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content reveal">
+      <p class="kicker">Page 1</p>
+      <h1>初到费城</h1>
+      <p class="subtitle">到费城机场以后：怎么到宾大 + 费城简介</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <article class="card">
+        <h3>欢迎来到费城</h3>
+        <p>欢迎来到美国，也欢迎来到宾大。很多中国学生到美国的第一站，就是费城国际机场。下飞机以后，你先要过海关、拿行李，然后再去学校或者住的地方。第一次来美国，大家可能会有一点紧张，可是不用担心，提前准备好材料就可以了。</p>
+
+        <h3>从机场到宾大</h3>
+        <p>从费城国际机场到宾大，有几种常用办法。第一种是坐 SEPTA 的 Airport Line。这个火车会停在机场的几个航站楼，也会去市中心。你可以先到 30th Street Station，再去宾大附近。第二种是坐出租车，或者用 Uber、Lyft 这样的打车软件。这样比较方便，可是一般比坐火车贵。第三种是请朋友、同学或者学长学姐来接你。</p>
+
+        <h3>来美国第一天要注意什么</h3>
+        <p>第一天到美国的时候，护照、签证、I 20 或 DS 2019、手机、钱包和学校地址都很重要，最好放在随身的包里，不要放进行李箱。手机最好提前充好电。你也可以先把学校老师、ISSS、室友或者朋友的联系方式保存好。这样到了机场以后，你会更安心。</p>
+
+        <h3>费城是什么样的城市</h3>
+        <p>费城是一个很有历史的城市，也有很多大学、博物馆、餐馆和体育活动。宾大在 University City，这里有很多学生，也有很多吃饭和学习的地方。费城市中心叫 Center City，从宾大过去很方便。周末的时候，你可以去看看城市风景，也可以去吃有名的费城食物。</p>
+        <figure class="inline-photo">
+          <img src="libertybell.jpg" alt="费城自由钟景点" loading="lazy" />
+          <figcaption>费城地标之一：Liberty Bell。</figcaption>
+        </figure>
+
+        <h3>费城地图</h3>
+        <p>下面这张地图可以帮助你快速了解费城、University City 和 Center City 的大致位置。</p>
+        <div id="philly-map" class="map-embed map-canvas" aria-label="费城地图，含三个地点标记"></div>
+
+        <h3>本周费城天气</h3>
+        <p>出发前和每天出门前都可以看一下天气，提前准备衣服和雨具。</p>
+        <div id="weather-widget" class="weather-widget" aria-live="polite">
+          正在加载本周天气...
+        </div>
+
+        <h3>小提醒</h3>
+        <p>美国的天气四季不一样。夏天可能很热，冬天可能很冷，还可能下雪。所以来费城以前，最好准备不同季节的衣服。第一天不要安排太多事情，先好好休息，第二天再慢慢开始熟悉新生活。</p>
+      </article>
+
+      <div class="cta-group">
+        <a class="btn" href="page2.html">下一页：住在宾大</a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-title">
+        <h2>实用清单与紧急联系方式</h2>
+        <p>把下面这些内容保存到手机备忘录，刚到美国时会很实用。</p>
+      </div>
+      <div class="grid two-col checklist-grid">
+        <article class="card checklist-card">
+          <h3>到达当天清单</h3>
+          <ul class="checklist-items">
+            <li>护照、签证、I-20/DS-2019 放在随身包里</li>
+            <li>手机开通网络并保持有电</li>
+            <li>确认去宿舍或住处的交通方式</li>
+            <li>到住处后给家人和朋友报平安</li>
+          </ul>
+        </article>
+
+        <article class="card checklist-card">
+          <h3>第一周任务清单</h3>
+          <ul class="checklist-items">
+            <li>激活 PennKey，登录 iPenn 和课程系统</li>
+            <li>办理 PennCard，熟悉图书馆和教学楼位置</li>
+            <li>了解宿舍收包裹流程和校园交通</li>
+            <li>添加课表到日历，安排固定学习时间</li>
+          </ul>
+        </article>
+
+        <article class="card checklist-card">
+          <h3>健康与保险清单</h3>
+          <ul class="checklist-items">
+            <li>确认学生保险状态（参保或 waiver）</li>
+            <li>保存 Student Health 相关信息</li>
+            <li>准备常用药和过敏信息记录</li>
+            <li>了解身体不适时的就医流程</li>
+          </ul>
+        </article>
+
+        <article class="card checklist-card emergency-card">
+          <h3>紧急联系方式</h3>
+          <ul class="checklist-items">
+            <li><strong>911</strong>：校外紧急报警（警察/消防/急救）</li>
+            <li><strong>Penn Public Safety</strong>：215-573-3333（校内紧急）</li>
+            <li><strong>ISSS</strong>：215-898-4661（工作时间）</li>
+          </ul>
+          <p class="contact-note">如遇签证/入境类突发情况，非工作时间可先联系 Penn Public Safety，再转接相关支持。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>宾大留学指南 | CHIN 0410 Midterm Project | Spring 2026</p>
+    <p>团队成员：崔怀恩（Matthew Tsui）、Jack Lamey、兰杰山</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
