@@ -306,6 +306,10 @@ main {
   height: auto;
 }
 
+.inline-photo-small img {
+  max-width: min(100%, 420px);
+}
+
 .inline-photo figcaption {
   margin: 0;
   padding: 0.52rem 0.72rem 0.62rem;
